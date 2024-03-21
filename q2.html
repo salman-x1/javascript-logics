@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h5>
+        Print the Window
+    </h5>
+    <button onclick="window.print()">Print</button>
+
+
+    <!-- LEAP YEAR CHECKER -->
+    <h5> Q5</h5>
+    <p id="reverse"></p>
+    <h5>Leap Year</h5>
+    <input value="" id="leapyear" type="number">
+    <button type="button" id="submityear">Submit</button>
+    <p id="result"></p>
+
+    <!-- RANDOM NUMBER CHECKER -->
+    <h5>Random Number Checker</h5>
+    <input type="number" name="" id="randomInput">
+    <button type="button" onclick="randomFunction()">Enter</button>
+    <p id="randomNumberOutput"></p>
+
+    <!-- Multiplication Division From User -->
+
+    <span>1st Number: </span>
+    <input type="number" name="" id="inputUserNumber1">
+    <br>
+    <span>2nd Number: </span>
+    <input type="number" id="inputUserNumber2">
+    <br>
+    <button onclick="multiplyFunction()">Multiply</button>
+    <button onclick="divideFunction()">Divide</button>
+    <br>
+    <span>The Result is:</span>
+    <p id="outputResult"></p>
+
+
+    <!-- CONVERT TEMPERATURE -->
+    <input type="number" name="" id="inputFahrenheit" placeholder="Convert Fahrenheit into Celsius">
+    <button onclick="FahrenheitConverter()">Enter TEMPERATURE</button>
+    <br>
+    <p id="outputCelsius"></p>
+
+
+
+
+    <input type="text" id="inputCelsius" placeholder="Convert Celsius into Fahrenheit">
+    <button onclick="CelsiusConverter()">Enter TEMPERATURE</button>
+    <p id="outputFahrenheit"></p>
+
+    <!-- URL WEBSITE  -->
+
+    <p id="websiteURL"></p>
+
+
+
+
+    <script src="q5.js"></script>
+    <script src="q8_randomNum.js"></script>
+    <script src="q9_mul_div.js"></script>
+    <script src="q11_temp.js"></script>
+    <script src="q12_getURL.js"></script>
+    <script src="q5_leapyear.js"></script>
+</body>
+
+
+</html>
