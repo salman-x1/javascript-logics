@@ -9,18 +9,18 @@ class BankAccount {
     }
     deposit(amount) {
 
-        console.log("Deposit Amount: " , this.balance+=amount);
+        console.log("Deposit Amount: ", this.balance += amount);
 
     }
     withDraw(amount) {
-        console.log("WithDraw Money: " , (this.balance = this.balance-amount));
+        console.log("WithDraw Money: ", (this.balance = this.balance - amount));
     }
-    display(){
-        console.log("Total Balance: " , this.balance);
+    display() {
+        console.log("Total Balance: ", this.balance);
     }
 }
 
-const account1 = new BankAccount("123123123",4000);
+const account1 = new BankAccount("123123123", 4000);
 
 //Deposit Amount
 account1.deposit(200);

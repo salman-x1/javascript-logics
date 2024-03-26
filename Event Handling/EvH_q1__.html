@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const buttonvar = document.createElement('button');
+        const paravar = document.createElement('p');
+
+
+        buttonvar.innerText = "This Button";
+        paravar.textContent = 'Paragraph Here';
+        buttonvar.addEventListener('click', () => {
+            console.log("Salman");
+            paravar.textContent = "Button Clicked";
+        })
+        document.body.appendChild(buttonvar)
+        document.body.appendChild(paravar)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-ctn {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            min-width: 120px;
+            padding: 0;
+            list-style: none;
+            z-index: 1;
+
+        }
+
+        .dropdown-option {
+            cursor: pointer;
+            padding: 10px;
+
+        }
+
+        .dropdown-option:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown-ctn">
+        <button class="dropdown-btn">Subject</button>
+        <ul id="dropdown-options" class="dropdown-options">
+            <li class="dropdown-option">CN</li>
+            <li class="dropdown-option">AI</li>
+            <li class="dropdown-option">PF</li>
+        </ul>
+    </div>
+    <script>
+        const dropdownButton = document.querySelector('.dropdown-btn');
+        const dropdownOptions = document.querySelector('.dropdown-options');
+        dropdownButton.addEventListener('click', () => {
+            dropdownOptions.style.display= dropdownButton.style.display === 'none' ? 'block' : 'none';
+        }) 
+    </script>
+</body>
+
+</html>
